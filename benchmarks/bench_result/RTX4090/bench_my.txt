@@ -1,0 +1,57 @@
+(ringattention) (base) v-feiychen@srgws-16:~/flash-attention/benchmarks$ python benchmark_my.py 
+### causal=False, headdim=64, batch_size=4, nheads=8, seqlen=2048 ###
+Flash2 fwd: 0.00023350613191723822 s, bwd: 0.0006496652650336425 s, fwd + bwd: 0.0008831713969508807 s
+Flash2 fwd: 147.15 TFLOPs/s, bwd: 132.22 TFLOPs/s, fwd + bwd: 136.17 TFLOPs/s
+Pytorch fwd: 0.0013225646999975047 s, bwd: 0.003145019120226304 s, fwd + bwd: 0.004467583820223809 s
+Pytorch fwd: 25.98 TFLOPs/s, bwd: 27.31 TFLOPs/s, fwd + bwd: 26.92 TFLOPs/s
+Triton fwd: 0.0004836503571520249 s, bwd: 0.0010027285975714524 s, fwd + bwd: 0.0014863789547234774 s
+Triton fwd: 71.04 TFLOPs/s, bwd: 85.67 TFLOPs/s, fwd + bwd: 80.91 TFLOPs/s
+### causal=False, headdim=128, batch_size=4, nheads=8, seqlen=2048 ###
+Flash2 fwd: 0.00042481540391842523 s, bwd: 0.0012163903564214706 s, fwd + bwd: 0.0016412057603398958 s
+Flash2 fwd: 161.76 TFLOPs/s, bwd: 141.24 TFLOPs/s, fwd + bwd: 146.55 TFLOPs/s
+Pytorch fwd: 0.0014649608017255863 s, bwd: 0.003347910474985838 s, fwd + bwd: 0.004812871276711424 s
+Pytorch fwd: 46.91 TFLOPs/s, bwd: 51.32 TFLOPs/s, fwd + bwd: 49.97 TFLOPs/s
+Triton fwd: nan s, bwd: nan s, fwd + bwd: nan s
+Triton fwd: 0.00 TFLOPs/s, bwd: 0.00 TFLOPs/s, fwd + bwd: 0.00 TFLOPs/s
+### causal=False, headdim=192, batch_size=4, nheads=8, seqlen=2048 ###
+Flash2 fwd: 0.0006443051621317864 s, bwd: 0.0021748602545509734 s, fwd + bwd: 0.0028191654166827597 s
+Flash2 fwd: 159.99 TFLOPs/s, bwd: 118.49 TFLOPs/s, fwd + bwd: 127.97 TFLOPs/s
+Pytorch fwd: 0.0016297022035966318 s, bwd: 0.0036703301128000023 s, fwd + bwd: 0.005300032316396634 s
+Pytorch fwd: 63.25 TFLOPs/s, bwd: 70.21 TFLOPs/s, fwd + bwd: 68.07 TFLOPs/s
+Triton fwd: nan s, bwd: nan s, fwd + bwd: nan s
+Triton fwd: 0.00 TFLOPs/s, bwd: 0.00 TFLOPs/s, fwd + bwd: 0.00 TFLOPs/s
+### causal=False, headdim=256, batch_size=4, nheads=8, seqlen=2048 ###
+Flash2 fwd: 0.000894293732320269 s, bwd: 0.003197433069969217 s, fwd + bwd: 0.004091726802289486 s
+Flash2 fwd: 153.68 TFLOPs/s, bwd: 107.46 TFLOPs/s, fwd + bwd: 117.56 TFLOPs/s
+Pytorch fwd: 0.0018859656682858863 s, bwd: 0.004056340533619126 s, fwd + bwd: 0.005942306201905012 s
+Pytorch fwd: 72.87 TFLOPs/s, bwd: 84.71 TFLOPs/s, fwd + bwd: 80.95 TFLOPs/s
+Triton fwd: nan s, bwd: nan s, fwd + bwd: nan s
+Triton fwd: 0.00 TFLOPs/s, bwd: 0.00 TFLOPs/s, fwd + bwd: 0.00 TFLOPs/s
+### causal=True, headdim=64, batch_size=4, nheads=8, seqlen=2048 ###
+Flash2 fwd: 0.00016871746629476547 s, bwd: 0.0006920491345226764 s, fwd + bwd: 0.0008607666008174419 s
+Flash2 fwd: 101.83 TFLOPs/s, bwd: 62.06 TFLOPs/s, fwd + bwd: 69.86 TFLOPs/s
+Pytorch fwd: 0.0019332698235909145 s, bwd: 0.003142225028326114 s, fwd + bwd: 0.005075494851917028 s
+Pytorch fwd: 8.89 TFLOPs/s, bwd: 13.67 TFLOPs/s, fwd + bwd: 11.85 TFLOPs/s
+Triton fwd: 0.0002806783343354861 s, bwd: 0.0007534678094089031 s, fwd + bwd: 0.0010341461437443893 s
+Triton fwd: 61.21 TFLOPs/s, bwd: 57.00 TFLOPs/s, fwd + bwd: 58.14 TFLOPs/s
+### causal=True, headdim=128, batch_size=4, nheads=8, seqlen=2048 ###
+Flash2 fwd: 0.00029914937913417817 s, bwd: 0.0008116320086022218 s, fwd + bwd: 0.0011107813877364 s
+Flash2 fwd: 114.86 TFLOPs/s, bwd: 105.84 TFLOPs/s, fwd + bwd: 108.27 TFLOPs/s
+Pytorch fwd: 0.0021067483661075435 s, bwd: 0.0033498933694014947 s, fwd + bwd: 0.005456641735509038 s
+Pytorch fwd: 16.31 TFLOPs/s, bwd: 25.64 TFLOPs/s, fwd + bwd: 22.04 TFLOPs/s
+Triton fwd: nan s, bwd: nan s, fwd + bwd: nan s
+Triton fwd: 0.00 TFLOPs/s, bwd: 0.00 TFLOPs/s, fwd + bwd: 0.00 TFLOPs/s
+### causal=True, headdim=192, batch_size=4, nheads=8, seqlen=2048 ###
+Flash2 fwd: 0.0004493788039932648 s, bwd: 0.0013628809712827206 s, fwd + bwd: 0.0018122597752759854 s
+Flash2 fwd: 114.69 TFLOPs/s, bwd: 94.54 TFLOPs/s, fwd + bwd: 99.54 TFLOPs/s
+Pytorch fwd: 0.002255819831043482 s, bwd: 0.0036519965622574093 s, fwd + bwd: 0.005907816393300892 s
+Pytorch fwd: 22.85 TFLOPs/s, bwd: 35.28 TFLOPs/s, fwd + bwd: 30.53 TFLOPs/s
+Triton fwd: nan s, bwd: nan s, fwd + bwd: nan s
+Triton fwd: 0.00 TFLOPs/s, bwd: 0.00 TFLOPs/s, fwd + bwd: 0.00 TFLOPs/s
+### causal=True, headdim=256, batch_size=4, nheads=8, seqlen=2048 ###
+Flash2 fwd: 0.0005451065332939228 s, bwd: 0.0018255481030791999 s, fwd + bwd: 0.0023706546363731224 s
+Flash2 fwd: 126.07 TFLOPs/s, bwd: 94.11 TFLOPs/s, fwd + bwd: 101.46 TFLOPs/s
+Pytorch fwd: 0.0025044545996934175 s, bwd: 0.004010335961356759 s, fwd + bwd: 0.006514790561050176 s
+Pytorch fwd: 27.44 TFLOPs/s, bwd: 42.84 TFLOPs/s, fwd + bwd: 36.92 TFLOPs/s
+Triton fwd: nan s, bwd: nan s, fwd + bwd: nan s
+Triton fwd: 0.00 TFLOPs/s, bwd: 0.00 TFLOPs/s, fwd + bwd: 0.00 TFLOPs/s
