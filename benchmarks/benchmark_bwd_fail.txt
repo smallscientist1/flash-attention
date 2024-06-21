@@ -1,0 +1,85 @@
+### causal=False, headdim=64, batch_size=32, seqlen=512 ###
+Flash2 fwd: 176.23 TFLOPs/s, bwd: 113.98 TFLOPs/s, fwd + bwd: 126.77 TFLOPs/s
+Pytorch fwd: 27.08 TFLOPs/s, bwd: 34.60 TFLOPs/s, fwd + bwd: 32.06 TFLOPs/s
+### causal=False, headdim=64, batch_size=16, seqlen=1024 ###
+Flash2 fwd: 187.69 TFLOPs/s, bwd: 131.27 TFLOPs/s, fwd + bwd: 143.61 TFLOPs/s
+Pytorch fwd: 31.43 TFLOPs/s, bwd: 40.31 TFLOPs/s, fwd + bwd: 37.30 TFLOPs/s
+### causal=False, headdim=64, batch_size=8, seqlen=2048 ###
+Flash2 fwd: 187.91 TFLOPs/s, bwd: 141.41 TFLOPs/s, fwd + bwd: 152.17 TFLOPs/s
+Pytorch fwd: 30.12 TFLOPs/s, bwd: 45.05 TFLOPs/s, fwd + bwd: 39.46 TFLOPs/s
+### causal=False, headdim=64, batch_size=4, seqlen=4096 ###
+Flash2 fwd: 180.30 TFLOPs/s, bwd: 147.04 TFLOPs/s, fwd + bwd: 155.22 TFLOPs/s
+Pytorch fwd: 31.33 TFLOPs/s, bwd: 47.38 TFLOPs/s, fwd + bwd: 41.33 TFLOPs/s
+### causal=False, headdim=64, batch_size=2, seqlen=8192 ###
+Flash2 fwd: 178.28 TFLOPs/s, bwd: 149.22 TFLOPs/s, fwd + bwd: 156.51 TFLOPs/s
+Pytorch fwd: 29.51 TFLOPs/s, bwd: 48.53 TFLOPs/s, fwd + bwd: 40.98 TFLOPs/s
+### causal=False, headdim=64, batch_size=1, seqlen=16384 ###
+Flash2 fwd: 177.99 TFLOPs/s, bwd: 150.26 TFLOPs/s, fwd + bwd: 157.26 TFLOPs/s
+Pytorch fwd: 31.91 TFLOPs/s, bwd: 47.11 TFLOPs/s, fwd + bwd: 41.47 TFLOPs/s
+### causal=False, headdim=128, batch_size=32, seqlen=512 ###
+Flash2 fwd: 187.44 TFLOPs/s, bwd: 105.53 TFLOPs/s, fwd + bwd: 120.59 TFLOPs/s
+Pytorch fwd: 40.04 TFLOPs/s, bwd: 52.83 TFLOPs/s, fwd + bwd: 48.41 TFLOPs/s
+### causal=False, headdim=128, batch_size=16, seqlen=1024 ###
+Flash2 fwd: 201.14 TFLOPs/s, bwd: 123.24 TFLOPs/s, fwd + bwd: 138.57 TFLOPs/s
+Pytorch fwd: 50.66 TFLOPs/s, bwd: 67.00 TFLOPs/s, fwd + bwd: 61.35 TFLOPs/s
+### causal=False, headdim=128, batch_size=8, seqlen=2048 ###
+Flash2 fwd: 202.13 TFLOPs/s, bwd: 133.64 TFLOPs/s, fwd + bwd: 147.96 TFLOPs/s
+Pytorch fwd: 52.09 TFLOPs/s, bwd: 79.99 TFLOPs/s, fwd + bwd: 69.38 TFLOPs/s
+### causal=False, headdim=128, batch_size=4, seqlen=4096 ###
+Flash2 fwd: 195.66 TFLOPs/s, bwd: 139.12 TFLOPs/s, fwd + bwd: 151.64 TFLOPs/s
+Pytorch fwd: 56.16 TFLOPs/s, bwd: 87.72 TFLOPs/s, fwd + bwd: 75.59 TFLOPs/s
+### causal=False, headdim=128, batch_size=2, seqlen=8192 ###
+Flash2 fwd: 193.15 TFLOPs/s, bwd: 142.35 TFLOPs/s, fwd + bwd: 153.92 TFLOPs/s
+Pytorch fwd: 53.72 TFLOPs/s, bwd: 91.13 TFLOPs/s, fwd + bwd: 76.01 TFLOPs/s
+### causal=False, headdim=128, batch_size=1, seqlen=16384 ###
+Flash2 fwd: 191.44 TFLOPs/s, bwd: 143.53 TFLOPs/s, fwd + bwd: 154.58 TFLOPs/s
+Pytorch fwd: 58.55 TFLOPs/s, bwd: 89.88 TFLOPs/s, fwd + bwd: 77.96 TFLOPs/s
+### causal=False, headdim=256, batch_size=32, seqlen=512 ###
+Flash2 fwd: 158.17 TFLOPs/s, bwd: 104.21 TFLOPs/s, fwd + bwd: 115.46 TFLOPs/s
+Pytorch fwd: 52.06 TFLOPs/s, bwd: 70.02 TFLOPs/s, fwd + bwd: 63.74 TFLOPs/s
+### causal=False, headdim=256, batch_size=16, seqlen=1024 ###
+Flash2 fwd: 171.94 TFLOPs/s, bwd: 117.17 TFLOPs/s, fwd + bwd: 128.90 TFLOPs/s
+Pytorch fwd: 72.32 TFLOPs/s, bwd: 96.16 TFLOPs/s, fwd + bwd: 87.88 TFLOPs/s
+### causal=False, headdim=256, batch_size=8, seqlen=2048 ###
+Flash2 fwd: 178.03 TFLOPs/s, bwd: 124.60 TFLOPs/s, fwd + bwd: 136.28 TFLOPs/s
+Pytorch fwd: 80.34 TFLOPs/s, bwd: 119.23 TFLOPs/s, fwd + bwd: 104.75 TFLOPs/s
+### causal=False, headdim=256, batch_size=4, seqlen=4096 ###
+Flash2 fwd: 175.70 TFLOPs/s, bwd: 128.15 TFLOPs/s, fwd + bwd: 138.89 TFLOPs/s
+Pytorch fwd: 89.57 TFLOPs/s, bwd: 134.04 TFLOPs/s, fwd + bwd: 117.39 TFLOPs/s
+### causal=False, headdim=256, batch_size=2, seqlen=8192 ###
+Flash2 fwd: 173.74 TFLOPs/s, bwd: 131.31 TFLOPs/s, fwd + bwd: 141.16 TFLOPs/s
+Pytorch fwd: 89.13 TFLOPs/s, bwd: 137.52 TFLOPs/s, fwd + bwd: 119.05 TFLOPs/s
+### causal=False, headdim=256, batch_size=1, seqlen=16384 ###
+Flash2 fwd: 174.59 TFLOPs/s, bwd: 134.68 TFLOPs/s, fwd + bwd: 144.09 TFLOPs/s
+Pytorch fwd: 98.42 TFLOPs/s, bwd: 137.28 TFLOPs/s, fwd + bwd: 123.37 TFLOPs/s
+Traceback (most recent call last):
+  File "/home/v-feiychen/flash-attention/benchmarks/benchmark_flash_attention.py", line 103, in <module>
+    f, b = time_fwd_bwd(
+  File "/home/v-feiychen/flash-attention/benchmarks/benchmark_flash_attention.py", line 67, in time_fwd_bwd
+    time_f, time_b = benchmark_fwd_bwd(func, *args, **kwargs)
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/flash_attn-2.0.9-py3.9-linux-x86_64.egg/flash_attn/utils/benchmark.py", line 140, in benchmark_fwd_bwd
+    benchmark_backward(
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/flash_attn-2.0.9-py3.9-linux-x86_64.egg/flash_attn/utils/benchmark.py", line 66, in benchmark_backward
+    m = t.timeit(repeats)
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/torch/utils/benchmark/utils/timer.py", line 266, in timeit
+    self._timeit(number=max(int(number // 100), 2))
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/torch/utils/benchmark/utils/timer.py", line 256, in _timeit
+    return max(self._timer.timeit(number), 1e-9)
+  File "/anaconda/envs/flashattention/lib/python3.9/timeit.py", line 177, in timeit
+    timing = self.inner(it, self.timer)
+  File "<timeit-src>", line 6, in inner
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/flash_attn-2.0.9-py3.9-linux-x86_64.egg/flash_attn/utils/benchmark.py", line 59, in f
+    y.backward(grad, retain_graph=True)
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/torch/autograd/function.py", line 253, in apply
+    return user_fn(self, *args)
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/flash_attn-2.0.9-py3.9-linux-x86_64.egg/flash_attn/flash_attn_interface.py", line 185, in backward
+    _flash_attn_backward(
+  File "/anaconda/envs/flashattention/lib/python3.9/site-packages/flash_attn-2.0.9-py3.9-linux-x86_64.egg/flash_attn/flash_attn_interface.py", line 93, in _flash_attn_backward
+    dq, dk, dv, softmax_d, = flash_attn_cuda.bwd(
+RuntimeError: CUDA error: invalid argument
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

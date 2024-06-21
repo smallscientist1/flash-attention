@@ -1,0 +1,7 @@
+False
+fwd False tensor(0.0007, device='cuda:0', dtype=torch.float16, grad_fn=<MaxBackward1>) tensor(0., device='cuda:0', dtype=torch.float16, grad_fn=<MinBackward1>) tensor(2.1100e-05, device='cuda:0', dtype=torch.float16,
+       grad_fn=<MeanBackward0>)
+False
+dq False tensor(409.5000, device='cuda:0', dtype=torch.float16) tensor(0., device='cuda:0', dtype=torch.float16) tensor(0.1361, device='cuda:0', dtype=torch.float16)
+False
+dk False tensor(373.5000, device='cuda:0', dtype=torch.float16) tensor(0., device='cuda:0', dtype=torch.float16) tensor(0.4971, device='cuda:0', dtype=torch.float16)
