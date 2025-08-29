@@ -264,7 +264,12 @@ void run_mha_fwd_constexpr(Flash_fwd_params &params, cudaStream_t stream) {
             if (params.d <= 96) { return run_mha_fwd_<Arch, cutlass::bfloat16_t, 96, 96, Split, PagedKVNonTMA, Has_softcap, PackGQA>(params, stream); }
             #endif
             #ifndef FLASHATTENTION_DISABLE_HDIM128
-            if (params.d <= 128) { return run_mha_fwd_<Arch, cutlass::bfloat16_t, 128, 128, Split, PagedKVNonTMA, Has_softcap, PackGQA>(params, stream); }
+            if (params.d <= 128) { 
+                if (params.dv > 128) {
+                    return run_mha_fwd_<Arch, cutlass::bfloat16_t, 128, 256, Split, PagedKVNonTMA, Has_softcap, PackGQA>(params, stream);
+                }
+                return run_mha_fwd_<Arch, cutlass::bfloat16_t, 128, 128, Split, PagedKVNonTMA, Has_softcap, PackGQA>(params, stream); 
+            }
             #endif
             #ifndef FLASHATTENTION_DISABLE_HDIM192
             if (params.d <= 192) {
@@ -746,7 +751,8 @@ mha_fwd(at::Tensor q,   // (b, s_q, h, d) or (total_q, h, d) if there is cu_seql
     TORCH_CHECK(num_heads % num_heads_k == 0, "Number of heads in key/value must divide number of heads in query");
     if (head_size_v != head_size) {
         TORCH_CHECK((head_size > 128 && head_size <= 192 && head_size_v > 96 && head_size_v <= 128) ||
-                   (head_size <= 64 && head_size_v <= 512),
+                   (head_size <= 64 && head_size_v <= 512) || 
+                   (head_size == 128 && head_size_v == 256),
                    "If V headdim is different from Q/K dim, we only support Q/K headdim in (128, 192] and V headdim in (96, 128], "
                    "or (Q/K <= 64 and V <= 512).");
         TORCH_CHECK(dprops->major == 9, "Only Hopper supports different V headdim");
